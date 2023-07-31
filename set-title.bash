@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 function set-title-echo() {
-    echo -en "\033]0;$*\a"
+  echo -en "\033]0;$*\a"
 }
 
 function set-title-prompt() {
-    PROMPT_COMMAND="echo -en \"\033]0;$*\a\""
+  PROMPT_COMMAND="echo -en \"\033]0;$*\a\""
 }
 
 function set-title-PS1() {
@@ -16,5 +16,5 @@ function set-title-PS1() {
 }
 
 function set-title() {
-    set-title-echo "$*"
+  set-title-echo "$*"
 }
